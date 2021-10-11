@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<style>
+#ff {
+   border-style: groove;
+   border-width: 10px;
+}
+#ff {
+   margin-left: 20%;
+   margin-right: 20%;
+   margin-bottom: 10%;
+}
+#hh {
+   font-family: Georgin;
+   font-size: 35px;
+   text-align: center;
+}
+#pp {
+   font-size: 30px;
+}
+#ff {
+   background-color: white;
+}
+body {
+   background-image: url("da.jpg");
+   background-repeat: no repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+</style>
+<body>
+
+<h1 id="hh">Student's Registration Form</h1>
+
+<marquee>
+<p id="pp">Note:Fill the form correctly</p>
+</marquee>
+
+<form id="ff" action="/action_page.php">
+  <br>
+  <label>Student ID:</label><br>
+  <input type="text"><br><br>
+  <label>Name:</label><br>
+  <input type="text"><br>
+  <label>Password:</label><br>
+  <input type="password"><br><br>
+  <label>Gender:</label><br>
+  <input type="radio">
+  <label>Male</label><br>
+  <input type="radio">
+  <label>Female</label><br><br>
+  <label>Department:</label><br>
+  <input list="departments" name="depts">
+  <datalist id="departments">
+    <option value="EEE">
+    <option value="ECE">
+    <option value="CSE">
+    <option value="IT">
+    <option value="CIVIL">
+    <option value="MECH">
+  </datalist><br><br>
+  <label>Entry Year:</label><br>
+  <input type="number" min="2010" max="2020"><br><br>
+  <label>Exit Year:</label><br>
+  <input type="number" min="2014" max="2024"><br><br>
+  <label>Section:</label><br>
+  <input list="sec" name="secs">
+  <datalist id="sec">
+    <option value="A">
+    <option value="B">
+  </datalist><br><br>
+  <label>University Reg. Number:</label><br>
+  <input type="text"><br><br>
+  <label>Date of Birth:</label><br>
+  <input type="date"><br><br>
+  <label>Photo:</label><br>
+  <input type="file"><br><br>
+  <label>Father's Name:<br>
+  <input type="text"><br><br>
+  <label>Mother's Name:<br>
+  <input type="text"><br><br>
+  <label>Contact number 1:</label><br>
+  <input type="tel" placeholder="12345 67890" pattern="[0-9]{5} [0-9]{5}" required><br>
+  <small>Format: 12345 67890</small><br><br>
+  <label>Contact number 2:</label><br>
+  <input type="tel" placeholder="12345 67890" pattern="[0-9]{5} [0-9]{5}" required><br>
+  <small>Format: 12345 67890</small><br><br>
+  <label>Email Address:</label><br>
+  <input type="email"><br><br>
+  <label>Residential Address:</label><br>
+  <textarea></textarea><br><br>
+  <label>City:</label><br>
+  <input type="text"><br><br>
+  <label>PIN Code:</label><br>
+  <input type="tel" placeholder="123 456" pattern="[0-9]{3} [0-9]{3}" required><br>
+  <small>Format: 123 678</small><br><br>
+  <label>State:</label><br>
+  <input type="text" value="Tamilnadu" size="9" disabled><br><br>
+  <label>District:</label><br>
+  <input list="dist" name="district">
+  <datalist id="dist">
+     <option value="Chennai">
+     <option value="Coimbatore">
+     <option value="Dindigul">
+     <option value="Erode">
+     <option value="Kanyakumari">
+     <option value="Kanchipuram">
+     <option value="Madurai">
+     <option value="Namakkal">
+     <option value="Nilagiri">
+     <option value="Pudukkottai">
+     <option value="Ramanathapuram">
+     <option value="Ranipet">
+     <option value="Sivagangai">
+     <option value="Thanjavur">
+     <option value="Tiruvannamalai">
+     <option value="Tirunelveli">
+     <option value="Trichy">
+     <option value="Tuticorin">
+     <option value="Vellore">
+  </datalist><br><br> 
+  <label>X Mark:</label><br>
+  <input type="number" min="200" max="500"><br><br>
+  <label>XII Mark:</label><br>
+  <input type="number" min="250" max="600"><br><br>
+  <label>Board of study:</label><br>
+  <input list="bos" name="board">
+  <datalist id="bos">
+     <option value="State Board">
+     <option value="CBSE">
+     <option value="ICSE">
+  </datalist><br><br>
+  <label>Medium of study:</label><br>
+  <input list="mos" name="med">
+  <datalist id="mos">
+     <option value="English">
+     <option value="Tamil">
+  </datalist><br><br>
+  <label>Date:</label><br>
+  <input type="text" value="03/05/2021" size="10" disabled><br><br>
+  <input type="checkbox" id="e1" name="e1" value="Agreement" required>
+  <label for="e1"> I agree with the terms and conditions</label><br><br>
+  <input type="submit">
+  <input type="reset"><br><br>
+</form>
+
+</body>
+</html>
